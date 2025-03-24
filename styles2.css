@@ -1,0 +1,152 @@
+body {
+  font-family: "Noto Sans";
+}
+.page {
+  width: 971px;
+  height: 943px;
+  background: #2e0549;
+  display: flex;
+  align-items: start;
+}
+h1 {
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  width: 374px;
+  height: 155px;
+
+  margin-top: 88px;
+  margin-left: 83px;
+}
+strong {
+  color: #e20c9f;
+}
+form {
+  display: flex;
+  width: 388px;
+
+  padding: 25px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  gap: 36px;
+  margin-top: 63px;
+}
+h2 {
+  color: #666;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px;
+}
+.prenom {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"] {
+  padding: 16px;
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--W-Background, #fff);
+}
+.adresse {
+  display: flex;
+  flex-direction: column;
+}
+input[type="email"] {
+  padding: 16px;
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 2px solid #e20c9f;
+  background: var(--W-Background, #fff);
+}
+.texte {
+  flex-direction: column;
+}
+textarea {
+  width: 355px;
+  height: 225px;
+
+  color: #666;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  resize: none;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--W-Background, #fff);
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  color: #666;
+  font-family: "Noto Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.radios {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.radios label {
+  color: #e20c9f;
+  padding: 16px;
+  border: solid #e20c9f;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.radios label:has(:checked) {
+  color: var(--W-Background, #fff);
+  background-color: #e20c9f;
+
+  padding: 16px;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+button[type="submit"] {
+  color: var(--W-Background, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #e20c9f;
+}

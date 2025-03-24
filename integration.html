@@ -3,7 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Formulaires - Bases - Intégration</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <h1>Discutons et collaborons sur des <strong>projets</strong> super!</h1>
+      <form>
+        <div class="interets">
+          <h2>Je suis intéressé par</h2>
+          <div class="radios">
+            <label for="uiux">
+              <input type="radio" name="interet" value="uiux" id="uiux" />
+              UI / UX Design
+            </label>
+            <label for="web">
+              <input type="radio" name="interet" value="wb" id="web" />
+              Web design
+            </label>
+            <label for="graphic">
+              <input type="radio" name="interet" value="graphic" id="graphic" />
+              Graphic design
+            </label>
+            <label for="other">
+              <input type="radio" name="interet" value="other" id="other" />
+              Other
+            </label>
+          </div>
+        </div>
+        <div class="prenom">
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" placeholder="Votre prénom" />
+        </div>
+        <div class="adresse">
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Typing |"
+            required
+          />
+        </div>
+        <div class="texte">
+          <label for="message">Message *</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Votre message"
+            required
+          ></textarea>
+        </div>
+        <span>
+          <button type="submit">Envoyer</button>
+        </span>
+      </form>
+    </div>
+  </body>
 </html>
